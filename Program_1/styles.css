@@ -1,0 +1,93 @@
+body {
+  font-family: sans-serif;
+}
+
+#logo-1 {
+  height: 100px;
+  width: 23%;
+}
+
+#description {
+  display: inline-block;
+  text-align: center;
+  width: 57%;
+}
+
+#logo {
+  height: 150px;
+  width: 200px;
+}
+
+#dept_details {
+  text-align: center; 
+}
+
+#section_details {
+  display: flex;
+  justify-content: space-around;
+}
+
+table {
+  border: solid 2px rgb(0, 0, 0);
+  border-collapse: collapse;
+  margin: 20px;
+  /* display: flex;
+  justify-content: center; */
+}
+
+table th{
+  padding: 7px;
+  border: solid 2px rgb(0, 0, 0);
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table td {
+  border: solid 2px rgb(0, 0, 0);
+  border-collapse: collapse;
+  text-align: center;
+}
+
+#time-table .lab .div1 {
+  border-collapse: collapse;
+  border-bottom: solid 2px rgb(0, 0, 0);
+}
+
+#time-table .lab .div2 {
+  border-collapse: collapse;
+  border-top: solid 2px rgb(0, 0, 0);
+}
+
+#time-table .uni {
+  height: 50px;
+}
+
+#time-table .break {
+  border-top: none;
+  border-bottom: none;
+  font-weight: bold;
+}
+
+#sub-details {
+  width: 80%;
+  margin: 0 100px;
+}
+
+#sub-details th {
+  padding: 7px;
+}
+
+#sub-details tr {
+  padding: 10px;
+}
+
+footer {
+  margin: 2px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sign {
+  text-align: center;
+}
