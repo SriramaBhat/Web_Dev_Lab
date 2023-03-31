@@ -1,0 +1,109 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(231, 175, 236);
+}
+
+header {
+  text-align: center;
+}
+
+#details {
+  display: flex;
+  justify-content: space-around;
+}
+
+main {
+  margin: 50px 100px;
+}
+
+form {
+  background-color: rgb(241, 202, 244);
+  border-radius: 10px;
+  margin: 50px;
+  padding: 20px 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+#stu-details {
+  border-bottom: 2px solid black;
+}
+
+#stu-details input {
+  display: block;
+  margin: 10px 0px;
+  border: none;
+  width: 50%;
+  border-bottom: solid black 1px;
+  background-color: rgb(253, 233, 255);
+  padding: 5px;
+}
+
+#stu-details label {
+  font-weight: bold;
+}
+
+#ques-3-label {
+  font-weight: bold;
+}
+
+#feedback-ques select {
+  display: block;
+  margin: 15px 0px;
+  padding: 5px;
+  background-color: rgb(253, 233, 255);
+}
+
+#feedback-ques textarea {
+  display: block;
+  resize: none;
+  margin: 10px 0px;
+  background-color: rgb(253, 233, 255);
+}
+
+#sugg {
+  margin: 25px 0px;
+}
+
+#sug-label {
+  font-weight: bold;
+}
+
+button {
+  margin: 10px;
+}
+
+.btn {
+  padding: 10px 25px;
+  font-family: sans-serif;
+  border: none;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+#submit {
+  background-color: rgb(224, 120, 212);
+  border: solid 2px rgb(224, 120, 212);
+}
+
+#btn-div {
+  display: flex;
+  justify-content: center;
+}
+
+#clear {
+  background-color: transparent;
+  border: solid 2px black;
+}
+
+#submit:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#clear:hover {
+  cursor: pointer;
+  background-color: rgb(224, 120, 212);
+}
