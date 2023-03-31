@@ -41,11 +41,7 @@ ul {
   padding: 5px;
 }
 
-#stu-details label {
-  font-weight: bold;
-}
-
-#ques-3-label {
+#stu-details label, #ques-3-label, #sug-label {
   font-weight: bold;
 }
 
@@ -65,10 +61,6 @@ ul {
 
 #sugg {
   margin: 25px 0px;
-}
-
-#sug-label {
-  font-weight: bold;
 }
 
 button {
