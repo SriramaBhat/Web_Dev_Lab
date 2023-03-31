@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Feedback Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Student Feedback Form</h1>
+      <div id="details">
+        <h3>Faculty name: ...</h3>
+        <h3>Subject Code: ...</h3>
+        <h3>Subject Title: ...</h3>
+      </div>
+    </header>
+    <main>
+      <form action="/" method="POST">
+        <div id="stu-details">
+          <h3>Student Details</h3>
+          <ul class="sec">
+            <li>
+              <label for="stu-name">Name</label>
+              <input type="text" id="stu-name" required />
+            </li>
+            <li>
+              <label for="stu-mail">Email Address</label>
+              <input type="email" id="stu-mail" required />
+            </li>
+            <li>
+              <label for="usn">USN</label>
+              <input type="text" id="usn" required />
+            </li>
+            <li>
+              <label for="branch">Branch</label>
+              <input type="text" id="branch" required />
+            </li>
+            <li>
+              <label for="sem">Semester</label>
+              <input type="number" id="sem" max="8" min="1" required />
+            </li>
+            <li>
+              <label for="section">Section</label>
+              <input type="text" id="section" maxlength="1" required />
+            </li>
+          </ul>
+        </div>
+        <div id="feedback-ques">
+          <h3>Feedback Questions</h3>
+          <section>
+            <ul>
+              <li>
+                <h4>Was the teacher punctual to the class?</h4>
+              </li>
+              <li>
+                <input type="radio" value="1" id="op-1" name="ques-1">
+                <label for="op-1">Yes</label>
+              </li>
+              <li>
+                <input type="radio" value="2" id="op-2" name="ques-1">
+                <label for="op-2">No</label>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li>
+                <h4>Was the teacher available for discussions and clearing doubts outside the class?</h4>
+              </li>
+              <li>
+                <input type="radio" value="1" id="opt-1" name="ques-2">
+                <label for="opt-1">Yes</label>
+              </li>
+              <li>
+                <input type="radio" value="2" id="opt-2" name="ques-2">
+                <label for="opt-2">No</label>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li>
+                <label for="ques-3" id="ques-3-label">What was your level of satisfaction with the teaching?</label>
+                <select name="ques-3" id="ques-3">
+                  <option value="1">Extemely Satisfying</option>
+                  <option value="2">Satisfying</option>
+                  <option value="3">Agreeable</option>
+                  <option value="4">Unsatisfying</option>
+                  <option value="5">Extremely Unsatisfying</option>
+                </select>
+              </li>
+              <li>
+                <h4>Was the teacher: (Select the applicable checkboxes) </h4>
+              </li>
+              <li>
+                <div>
+                  <input type="checkbox" value="1" name="ques-4" id="opti-1">
+                  <label for="opti-1">Helpful</label>
+                </div>
+                <div>
+                  <input type="checkbox" value="2" name="ques-4" id="opti-2">
+                  <label for="opti-2">Clear and Understandable</label>
+                </div>
+                <div>
+                  <input type="checkbox" value="3" name="ques-4" id="opti-3">
+                  <label for="opti-3">Knowledgeable</label>
+                </div>
+                <div>
+                  <input type="checkbox" value="4" name="ques-4" id="opti-4">
+                  <label for="opti-4">Interactive</label>
+                </div>
+              </li>
+              <li>
+                <h4>Do you want to submit the form?</h4>
+              </li>
+              <li>
+                <input type="checkbox" value="yes" name="agree" id="agree" required>
+                <label for="agree">Yes</label>
+              </li>
+              <li id="sugg">
+                <label for="suggestions" id="sug-label">Write your suggestions.</label>
+                <textarea name="suggestions" id="suggestions" cols="50" rows="4"></textarea>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <div id="btn-div">
+          <button class="btn" id="submit">Submit</button>
+          <button type="reset" class="btn" id="clear">Clear</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
