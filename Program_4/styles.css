@@ -1,0 +1,63 @@
+body {
+  font-family: sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+
+#sec-1 {
+  width: 50%;
+}
+
+#sec-2 {
+  width: 25%;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 0;
+}
+
+section p, .degree{
+  color: rgb(45, 44, 44);
+  font-size: 17px;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 22px;
+  color: rgb(26, 26, 151);
+}
+
+h4 {
+  font-size: 18px;
+  margin: 15px 0px;
+}
+
+.degree {
+  margin: 10px 0px;
+}
+
+div p {
+  color: black;
+  font-style: normal;
+  font-size: 15px;
+  margin: 3px;
+}
+
+.skill-list, .lang-list {
+  list-style: none;
+}
+
+.skill-list li, .lang-list li {
+  display: inline-block;
+  border: solid 1px black;
+  background-color: whitesmoke;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
