@@ -1,0 +1,89 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+  color: rgb(179, 235, 235);
+}
+
+#index-body {
+  background-image: url("./index.png");
+  background-repeat: repeat;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#front-body {
+  background-image: url("./front.png");
+  backdrop-filter: blur(4px);
+  background-repeat: repeat;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: rgb(4, 62, 18);
+  font-weight: bold;
+}
+
+#front-body h1 {
+  color: rgb(4, 62, 18);
+}
+
+#back-html {
+  background-image: url("./backend.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 100%;
+}
+
+#back-body {
+  backdrop-filter: blur(10px);
+  margin: 2rem 5rem;
+  margin-top: 5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 4rem;
+  color: rgb(53, 202, 202);
+}
+
+p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.5rem;
+}
+
+li {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  display: inline-block;
+  margin: 2.5rem;
+  transition: ease-in-out 0.5s;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem 2.5rem;
+  background-color: aqua;
+  border-radius: 6px;
+}
+
+a:active {
+  background-color: blue;
+}
+
+a:visited {
+  background-color: cadetblue;
+  color: lawngreen;
+}
+
+a:hover {
+  background-color: lightseagreen;
+  color: aqua;
+}
+
+li:hover {
+  transform: scale(1.2, 1.2);
+  transition: ease-in-out 0.5s;
+}
