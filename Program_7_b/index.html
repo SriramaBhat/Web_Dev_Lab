@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Details Form</h1>
+    </header>
+    <main>
+      <form action="/" id="details-form">
+        <ul class="sec">
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="Name" required />
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" required />
+          </li>
+          <li>
+            <label for="mobile-no">Mobile No.</label>
+            <input type="text" id="mobile-no" name="Mobile-Number" required />
+          </li>
+          <li>
+            <label for="gender">Gender</label>
+            <input type="text" id="gender" name="Gender" required />
+          </li>
+          <li>
+            <label for="fav-col">Favourite Color</label>
+            <input type="text" id="fav-col" name="Favourite-Color" required />
+          </li>
+        </ul>
+        <div id="btn-con">
+          <button type="submit" class="btn" id="submit">Submit</button>
+        </div>
+      </form>
+      <div id="received-container">
+        <h3>Received Details</h3>
+        <textarea name="received" id="received" cols="80" rows="15"></textarea>
+      </div>
+    </main>
+  </body>
+</html>
