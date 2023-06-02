@@ -1,6 +1,9 @@
 const formElement = document.getElementById("details-form");
 var alphaExp = /^[a-zA-Z]+$/;
 var emailExp = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
+var passExp = RegExp(
+  "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|]).{8,32}$"
+);
 formElement.addEventListener("submit", function (event) {
   event.preventDefault();
   for (let i = 0; i < formElement.elements.length - 1; i++) {
@@ -9,8 +12,19 @@ formElement.addEventListener("submit", function (event) {
       return;
     }
 
-    if (formElement[i].id === "name" && !formElement[i].value.match(alphaExp)) {
-      alert("Name Contains a number!!");
+    if (
+      formElement[i].id === "userid" &&
+      (formElement[i].value.length < 5 || formElement[i].value.length > 12)
+    ) {
+      alert("Invalid Userid");
+    }
+
+    if (
+      formElement[i].id === "name" &&
+      (!formElement[i].value.match(alphaExp) ||
+        formElement[i].value.length < 15)
+    ) {
+      alert("Name is invalid");
       return;
     }
 
@@ -22,8 +36,11 @@ formElement.addEventListener("submit", function (event) {
       return;
     }
 
-    if (formElement[i].id === "password" && formElement[i].value.length < 8) {
-      alert("Password is too short!!");
+    if (
+      formElement[i].id === "password" &&
+      (formElement[i].value.length < 8 || formElement[i].value.match(passExp))
+    ) {
+      alert("Password is Invalid");
       return;
     }
   }
