@@ -1,40 +1,36 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
-    <title>Average Calculator</title>
+    <title>Registration Form</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="index.js" defer="defer"></script>
   </head>
   <body>
     <header>
-      <h1>Details Form</h1>
+      <h1>Registration Form</h1>
     </header>
     <main>
       <form action="/" id="details-form">
-        <ul class="sec">
+        <ul>
           <li>
-            <label for="regno">Register Number (USN)</label>
-            <input type="text" id="regno" required="required" />
+            <label for="userid">User Id</label>
+            <input type="text" required id="userid" name="userid" />
           </li>
           <li>
-            <label for="subcode">Subject Code</label>
-            <input type="text" id="subcode" required="required" />
+            <label for="name">Name</label>
+            <input type="text" required id="name" name="name" />
           </li>
           <li>
-            <label for="marks-1">Test 1 Marks</label>
-            <input type="text" id="marks-1" required="required" />
+            <label for="email">Email</label>
+            <input type="email" required id="email" name="email" />
           </li>
           <li>
-            <label for="marks-2">Test 2 Marks</label>
-            <input type="text" id="marks-2" required="required" />
-          </li>
-          <li>
-            <label for="marks-3">Test 3 Marks</label>
-            <input type="text" id="marks-3" required="required" />
+            <label for="password">Password</label>
+            <input type="password" required id="password" name="password" />
           </li>
         </ul>
         <div id="btn-con">
-          <button type="submit" class="btn">Submit</button>
+          <button type="submit" class="btn">Register</button>
         </div>
       </form>
     </main>
