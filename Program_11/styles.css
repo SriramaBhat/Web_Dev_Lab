@@ -1,0 +1,63 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: aqua;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin: 0 10rem;
+  background-color: aquamarine;
+  padding: 2rem 1rem;
+  border-radius: 15px;
+}
+
+label {
+  margin: 0 2.5rem;
+  padding: 3rem 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#text-con {
+  margin: 1rem auto;
+}
+
+textarea {
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+  background-color: aliceblue;
+  resize: none;
+}
+
+#btn-div {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+button {
+  background-color: rgb(73, 180, 184);
+  color: aliceblue;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  display: inline-block;
+  margin: 0 0.75rem;
+}
+
+button:hover {
+  background-color: aliceblue;
+  color: rgb(73, 180, 184);
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  text-align: center;
+}
