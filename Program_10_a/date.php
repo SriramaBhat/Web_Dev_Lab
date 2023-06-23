@@ -1,3 +1,6 @@
+<!-- Program Statement:
+  Write a PHP script to display today’s date in dd-mm-yyyy format. 
+-->
 <!DOCTYPE html>
 <html>
 
