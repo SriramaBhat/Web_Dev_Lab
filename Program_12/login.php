@@ -1,3 +1,9 @@
+<!-- Program Statement:
+  Write a PHP script for login authentication. Design an HTML form which 
+  takes Username and Password from user and validate against stored Username 
+  and Password in a file.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
