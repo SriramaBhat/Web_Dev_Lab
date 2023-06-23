@@ -1,3 +1,8 @@
+<!-- Program Statement:
+  Create HTML page that contain textbox, submit / reset button. Write PHP 
+  script to display this information and also store into a text file.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
