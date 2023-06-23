@@ -1,3 +1,7 @@
+<!-- Program Statement:
+  Write a PHP script to check whether the number is prime or not when user input a valid number from client side
+-->
+
 <!DOCTYPE html>
 <html>
 
