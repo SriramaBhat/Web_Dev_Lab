@@ -2,8 +2,9 @@ const formElement = document.getElementById("details-form");
 var alphaExp = /^[a-zA-Z]+$/;
 var emailExp = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
 var passExp = RegExp(
-  "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|]).{8,32}$"
+  "^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$"
 );
+// *.!@$%^&(){}[]:;<>,.?/~_+-=|;
 formElement.addEventListener("submit", function (event) {
   event.preventDefault();
   for (let i = 0; i < formElement.elements.length - 1; i++) {
@@ -22,7 +23,7 @@ formElement.addEventListener("submit", function (event) {
     if (
       formElement[i].id === "name" &&
       (!formElement[i].value.match(alphaExp) ||
-        formElement[i].value.length < 15)
+        formElement[i].value.length < 11)
     ) {
       alert("Name is invalid");
       return;
@@ -38,7 +39,7 @@ formElement.addEventListener("submit", function (event) {
 
     if (
       formElement[i].id === "password" &&
-      (formElement[i].value.length < 8 || formElement[i].value.match(passExp))
+      !passExp.test(formElement[i].value)
     ) {
       alert("Password is Invalid");
       return;
